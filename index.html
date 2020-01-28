@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title> gallery </title>
+<link rel="icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563709371213&di=042006ec92363991c5a598e543756979&imgtype=jpg&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D3041367474%2C1181118816%26fm%3D214%26gp%3D0.jpg" />
+<style type="text/css">
+	body {
+		margin: 1em 3%;
+		background-image: url("https://timgsa.baidu.com/timg?		image&quality=80&size=b9999_10000&sec=1570113621097&di=9c818222f5332e6be12aeef37cb7ff69&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Ff3a117764da9345bf91e78dd856c442041bb438a31eab-UvXWmj_fw658");
+	}
+	a.color{
+		color: #009911;
+		font-display: block;
+	}
+	.text-decoration_none {
+		text-decoration: none;
+	}
+	#selector{
+		wedth: 100%;
+	}
+	#imagegallery{
+		list-style: none;
+		margin-top: 2em;
+	}
+	#selector ul li{
+		display: inline;
+		margin-right: 1em;
+	}
+	#placeholder {
+		display: block;
+		width: 400px;
+		height: 500px;
+	}
+	#description {
+		color: #2730F1;
+		width: 400px;
+		text-align: center;
+	}
+
+	#zhinai {
+		position: fixed;
+		right: 20px;
+		bottom: 15px;
+		animation: donghua 12s;
+		animation-iteration-count:infinite;
+		animation-direction: alternate;
+	}
+	/*动画*/
+	@keyframes donghua{
+		0%   {right:20px; bottom:15px;}
+		25%  {right:600px; bottom:15px;}
+		50%  {right:600px; bottom:450px;}
+		75%  {right:20px; bottom:450px;}
+		100% {right:20px; bottom:15px;}
+	}
+
+</style>
+</head>
+
+<body>
+	<h1 id="title">二次元人物介绍</h1>
+	<div id="selector">
+		<ul id="imagegallery"> <!--图片库-->
+			<li>
+				<a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563708894093&di=6d1d87d8bd50bc88372bb3bebebf9cda&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F6ed842b8d3258742821058b672bb0b3a83460813.jpg" title="友利" class="text-decoration_none color"> 友利奈绪 </a>
+			</li>
+			<li>
+				<a href="https://hbimg.huabanimg.com/0d5a97d36da0ad74ff4d5f32ee125d660c5d77d32a6c4-zmWpGd_fw658" title="你指尖跃动的光芒是我此生不换的信仰！" class="text-decoration_none color"> 御坂美琴 </a>
+			</li>
+			<li>
+				<a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563709273329&di=000e1ca13a12b8f7a56faf041f55a792&imgtype=0&src=http%3A%2F%2Fi.gtimg.cn%2Fqqlive%2Fimg%2Fjpgcache%2Ffiles%2Fqqvideo%2F3%2F3kit4jac9cbql88.jpg" title="天依老婆" class="text-decoration_none color"> 洛天依 </a>
+			</li>
+			<li>
+				<a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563708599097&di=5200cbc87d61f231e85fcdefbb262315&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201704%2F19%2F20170419130108_YWsP3.thumb.700_0.jpeg" title="智乃酱~~~" class="text-decoration_none color"> 香风智乃 </a>
+			</li>
+		</ul>
+	</div>
+	<div id = "tupian">
+	<img id="placeholder" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563710039093&di=aee41ed5759d6caf5b5b6ae35f72cddf&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F16%2F12%2F18%2F068d0794416ed1e918ea326707428f8a.jpg" alt="Bilibili乾杯[]~(￣▽￣)~*" />
+	<p id="description"> Bilibili乾杯[]~(￣▽￣)~* </p>
+	</div>
+	<br />
+	<a class="text-decoration_none" href="https://www.bilibili.com" onclick="popUp(this.href); return false" title="弹窗"> 哔哩哔哩乾杯[]~(￣▽￣)~* </a>
+
+	<div> <!--右下角哦~~~-->
+		<img id="zhinai" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563707089189&di=51f45a49165cff8aca787da7d6ce5859&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201710%2F07%2F20171007133934_QF2rk.thumb.224_0.gif" alt="智乃酱~~~" title="啦啦啦(～￣▽￣)～" />
+	</div>
+	
+<script type="text/javascript">
+	function popUp(winURL){
+		window.open(winURL, "popup", "width = 500, height = 620");
+	}
+	
+	function imageGallery(){
+		var gallery = document.getElementById("imagegallery");
+		var links = gallery.getElementsByTagName("a");
+		for (var i = 0; i < links.length; i++){
+			links[i].onclick = function(){
+				return !showPic(this);
+			}
+		}
+	}
+	
+	function showPic(witchpic){
+		var source = witchpic.href;
+		var placeholder = document.getElementById("placeholder");
+		placeholder.src = source;
+		var text = witchpic.title ? witchpic.title : "";
+		var description = document.getElementById("description");
+		description.firstChild.nodeValue = text;
+		return true;
+	}
+	
+	window.onload = function(){
+		imageGallery();
+	}
+</script>
+</body>
+</html>
